@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f6584b;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f7;
+  /* background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.355)); */
+  /* background: url("./assets/adidas.png") left no-repeat fixed; */
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navLinks {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.container {
+  width: 100vw;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.logo {
+  color: black;
+  width: 100px;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prodImg img {
+  margin-top: 50px;
+  /* width: 800px; */
+  filter: drop-shadow(-20px -5px rgba(0, 0, 0, 0.188));
+  /* transform: rotate(45deg); */
+  position: relative;
+}
+
+.prodImg::before {
+  content: "New Pick";
+  position: absolute;
+  left: 200px;
+  /* top: 0px; */
+  font-weight: 900;
+  font-size: 200px;
+  text-transform: uppercase;
+  /* filter: drop-shadow(15px 0px var(--primary-color)); */
+  background-color: #f5f5f7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23000000' fill-opacity='0.14'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+  /* background-color: #fff; */
+}
+
+.ctaBtn {
+  color: #277dd4;
+  text-decoration: none;
+}
+
+.section--2 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.brand {
+  line-height: 2ch;
+}
+
+.brand .item {
+  color: var(--primary-color);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.price {
+  font-weight: 400;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.varriant {
+  width: 90%;
+  margin: 40px auto;
+  padding: 120px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+}
+
+.bigText {
+  font-size: 4rem;
+  line-height: 2ch;
+  color: var(--primary-color);
+}
+
+.cart img {
+  width: 45px;
+}
