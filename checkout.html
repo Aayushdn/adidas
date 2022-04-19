@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | adidas.com</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scriptCheckout.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logoContainer">
+                <img src="./assets/adidas.svg" alt="logo" class="logo">
+            </div>
+
+            <div class="cart">
+                <img src="./assets/bag.png" alt="">
+            </div>
+        </header>
+
+        <div class="checkoutForm">
+            <div class="top">
+                <p class="title">Checkout</p>
+            </div>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Address 1">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Address 2">
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <input type="number" placeholder="Postal Code">
+                </div>
+                <div class="formGroup">
+                    <p class="txt">Payment Method</p>
+                    <span><input type="radio" name="payment" value="wallet" onclick="showMethod(0)"> PayPal </span>
+                    <span><input type="radio" name="payment" value="cc" onclick="showMethod(1)"> Credit Card </span>
+                </div>
+                <div class="formGroup wallet hidden">
+                    <button class="socialMediaBtn paypal">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png"
+                            alt="PayPal" />
+                    </button>
+                </div>
+                <div class="formGroup cc hidden">
+                    <!-- credit card form -->
+                    <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png"
+                        alt="Buy now with PayPal" />
+                    <div class="paymentForm">
+                        <div class="form-group">
+                            <span>
+                                <label for="ccnum">Credit Card Number</label>
+                                <input type="number" placeholder="XXX XXXX XXXX XXXX" id="ccnum"></span>
+                        </div>
+                        <div class="form-group">
+                            <span>
+                                <label for="ccnum">Name on card</label>
+                                <input type="text" placeholder="Name on Card" id="ccname"></span>
+                        </div>
+                        <div class="form-group">
+                            <span>
+                                <label for="expDate">Exp date</label>
+                                <input type="number" placeholder="MM/YY" id="expDate">
+                            </span>
+                            <span>
+                                <label for="cvv">CVV</label>
+                                <input type="number" placeholder="CVV" id="cvv"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ctaBtn--2">Pay now</div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
